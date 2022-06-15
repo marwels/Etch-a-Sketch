@@ -10,3 +10,5 @@ function generateDivs() {
     }
     document.getElementById("container").appendChild(fragment);
 }
+
+generateDivs();
