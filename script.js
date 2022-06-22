@@ -6,6 +6,7 @@ function generateDivs() {
     for (let i = 1; i <= 16; i++) {
         let divElement = document.createElement("div");
         divElement.classList.add("item");
+        divElement.id = `item${i}`;
         fragment.appendChild(divElement);
     }
     document.getElementById("container").appendChild(fragment);
