@@ -2,3 +2,8 @@
     display: grid;
     grid-template: repeat(16, 1fr)/repeat(16, 1fr);
 }
+
+.item {
+    margin: 0px;
+    border: none;
+}
