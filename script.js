@@ -13,3 +13,9 @@ function generateDivs() {
 }
 
 generateDivs();
+
+document.querySelectorAll(".item").forEach(item => {
+    item.addEventListener("mouseover", event => {
+        item.classList.add("black")
+    })
+})
