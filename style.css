@@ -1,9 +1,14 @@
 #container {
     display: grid;
+    height: 100vh;
+    width: 100vw;
+    /* These units are vh (viewport height), vw (viewport width), vmin (viewport minimum length) and vmax (viewport maximum length). */
     grid-template: repeat(16, 1fr)/repeat(16, 1fr);
 }
 
 .item {
     margin: 0px;
-    border: none;
+    border: solid 2px;
+    border-color: blue;
+    background-color: aqua;
 }
