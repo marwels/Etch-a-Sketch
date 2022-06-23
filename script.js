@@ -19,3 +19,8 @@ document.querySelectorAll(".item").forEach(item => {
         item.classList.add("black")
     })
 })
+
+function newCanva() {
+    let size = prompt("Please enter size of new page. It has to be number from 1 to 100:", "50");
+    return size;
+}

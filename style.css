@@ -10,9 +10,21 @@
     margin: 0px;
     border: solid 2px;
     border-color: blue;
-    background-color: aqua;
+    background-color:aquamarine ;
 }
 
 .black {
     background-color: black;
+}
+
+button {
+     margin: 15px;
+    background-color: red;
+    color: whitesmoke;
+    font-size: 30px;
+    border: solid red;
+    border-radius: 10px;
+    box-shadow: 20px 20px 30px -17px rgba(121, 120, 132, 1);
+    padding: 0 15px;
+    font-family: 'Baloo 2', cursive;
 }
