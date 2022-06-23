@@ -22,12 +22,15 @@ function generateDivs(size) {
         fragment.appendChild(divElement);
     }
     document.getElementById("container").appendChild(fragment);
+
+    addListeners();
 }
 
-generateDivs();
 
-document.querySelectorAll(".item").forEach(item => {
-    item.addEventListener("mouseover", event => {
-        item.classList.add("black")
+function addListeners() {
+    document.querySelectorAll(".item").forEach(item => {
+        item.addEventListener("mouseover", event => {
+            item.classList.add("black")
+        })
     })
-})
+}
