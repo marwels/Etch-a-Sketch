@@ -1,5 +1,5 @@
 function newCanva() {
-    let size = parseInt(prompt("Please enter size of new page. It has to be number from 1 to 25:", "15"), 10);
+    let size = parseInt(prompt("Please enter how many 'pixels' in a row you want. It has to be number from 1 to 25:", "15"), 10);
 
     if (size < 1 || size > 25) {
         parseInt(prompt("Please enter a number from 1 to 25", "15"), 10);
@@ -37,7 +37,16 @@ function generateDivs(size) {
 function addListeners() {
     document.querySelectorAll(".item").forEach(item => {
         item.addEventListener("mouseover", event => {
-            item.classList.add("black")
+            item.classList.add("color")
         })
     })
 }
+
+// document.getElementById("color").addEventListener("input", changeColor => {
+//     let color = document.getElementById("color").value;
+//     [...document.styleSheets[0].cssRules].find(x => x.selectorText == '.color')
+//         .style['background-color'] = color';
+
+
+// });
+
