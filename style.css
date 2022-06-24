@@ -1,7 +1,20 @@
+#body {
+    background-color: gainsboro;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
 #container {
     display: grid;
-    height: calc(100vh - 85px);
-    width: 100vw;
+    background-color: whitesmoke;
+    border: solid palevioletred 10px;
+    border-radius: 20px;
+    height: 550px;
+    width: 550px;
+    /* height: calc(100vh - 85px);
+    width: 100vw; */
     /* These units are vh (viewport height), vw (viewport width), vmin (viewport minimum length) and vmax (viewport maximum length). */
     /* grid-template: repeat(16, 1fr)/repeat(16, 1fr); */
 }
