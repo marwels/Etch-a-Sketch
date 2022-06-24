@@ -19,7 +19,7 @@ flex-direction: column;
 
 #title {
     background-color: #590696;
-    display: block;
+    align-self: stretch;
     padding: 0px;
 }
 
@@ -32,6 +32,7 @@ color: #FBCB0A;
 margin: 0px;
 margin-block-start: 0em;
 margin-block-end: 0em;
+text-align: center;
 
 }
 
@@ -43,6 +44,7 @@ margin-block-end: 0em;
     border-radius: 20px;
     height: 550px;
     width: 550px;
+    margin-left: 15px;
     /* height: calc(100vh - 85px);
     width: 100vw; */
     /* These units are vh (viewport height), vw (viewport width), vmin (viewport minimum length) and vmax (viewport maximum length). */
@@ -70,4 +72,9 @@ button {
     padding: 0 15px;
     font-family: 'Roboto', sans-serif;
     font-weight: bold;
+}
+
+#new {
+    background-color: #590696;
+    border: solid #590696;
 }
