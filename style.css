@@ -16,6 +16,11 @@ display: flex;
 flex-direction: column;
 }
 
+h1 {
+font-family: 'Palanquin Dark', sans-serif;
+
+}
+
 
 #container {
     display: grid;
@@ -50,5 +55,5 @@ button {
     border-radius: 10px;
     box-shadow: 20px 20px 30px -17px rgba(121, 120, 132, 1);
     padding: 0 15px;
-    font-family: 'Baloo 2', cursive;
+    font-family: 'Roboto', sans-serif;
 }
