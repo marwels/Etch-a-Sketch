@@ -1,6 +1,6 @@
 #container {
     display: grid;
-    height: 100vh;
+    height: calc(100vh - 85px);
     width: 100vw;
     /* These units are vh (viewport height), vw (viewport width), vmin (viewport minimum length) and vmax (viewport maximum length). */
     /* grid-template: repeat(16, 1fr)/repeat(16, 1fr); */

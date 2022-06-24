@@ -11,6 +11,12 @@ function newCanva() {
 }
 
 function generateDivs(size) {
+
+    let textGrid = `repeat(${size}, 1fr) / repeat(${size}, 1fr)`;
+    console.log(textGrid);
+    document.getElementById("container").style.gridTemplate = textGrid;
+
+
     let fragment = new DocumentFragment();  //create a virtual DOM element, 
     //make all of DOM changes on it, and then assign that virtual DOM element 
     //to real DOM once they are ready to commit
@@ -25,9 +31,6 @@ function generateDivs(size) {
 
     addListeners();
 
-    let textGrid = "'repeat(" + size + ", 1fr)'";
-    document.getElementById("container").style.gridTemplateColumns = textGrid;
-    document.getElementById("container").style.gridTemplateRows = textGrid;
 }
 
 
