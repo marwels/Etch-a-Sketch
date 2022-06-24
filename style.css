@@ -23,7 +23,7 @@ flex-direction: column;
     padding: 0px;
 }
 
-h1 {
+#title>h1 {
 font-family: 'Palanquin Dark', sans-serif;
 padding: 15px;
 font-size: 70px;
@@ -77,4 +77,36 @@ button {
 #new {
     background-color: #590696;
     border: solid #590696;
+}
+
+#colorSwitcher{
+  background: white;
+  box-shadow: 1em 1em 1em rgba(0, 0, 0, .1);
+  display: flex;
+  flex-direction: column;
+}
+
+#colorSwitcher .info{
+  padding: 1em;
+}
+
+#colorSwitcher h1, #colorSwitcher h2 {
+  margin: 0;
+  font: 2.2vh Helvetica-Neue, Helvetica, sans-serif;
+}
+
+#colorSwitcher h1 {
+    font-weight: bold;
+}
+
+input[type="color"] {
+  appearance: none;
+  -moz-appearance: none;
+  -webkit-appearance: none;
+  background: none;
+  border: 0;
+  cursor: pointer;
+  height: 15em;
+  padding: 0;
+  width: 15em;
 }
