@@ -1,3 +1,5 @@
+let currentColor = "black";
+
 function newCanva() {
     let size = parseInt(prompt("Please enter how many 'pixels' in a row you want. It has to be number from 1 to 25:", "15"), 10);
 
@@ -37,17 +39,28 @@ function generateDivs(size) {
 function addListeners() {
     document.querySelectorAll(".item").forEach(item => {
         item.addEventListener("mouseover", event => {
-            item.classList.add("color")
+            //item.classList.add("color");
+            if (currentColor === "rainbow") {
+                item.style.setProperty("background-color", "rgb(" + Math.floor(Math.random() * 256) + "," + Math.floor(Math.random() * 256) + "," + Math.floor(Math.random() * 256) + ")");
+            } else {
+
+                item.style.setProperty("background-color", currentColor);
+            }
+
         })
     })
 }
 
-// document.getElementById("rainbow").addEventListener("click",(rainbow=>{
-//     XXXX.style.backgroundColor = "rgb(" + Math.floor(Math.random() * 256) + "," + Math.floor(Math.random() * 256) + "," + Math.floor(Math.random() * 256) + ")";
-// }))
+document.getElementById("rainbow").addEventListener("click", (rainbow => {
+    //let color = "rgb(" + Math.floor(Math.random() * 256) + "," + Math.floor(Math.random() * 256) + "," + Math.floor(Math.random() * 256) + ")";
+    //document.body.style.setProperty("--box-color", color);
+    currentColor = "rainbow";
+}))
 
 document.getElementById("color").addEventListener("input", changeColor => {
     let color = document.getElementById("color").value;
-    document.body.style.setProperty("--box-color", color)
+    document.body.style.setProperty("--box-color", color);
+    currentColor = color;
 });
+
 
