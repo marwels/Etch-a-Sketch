@@ -48,8 +48,7 @@ function addListeners() {
 
 // document.getElementById("color").addEventListener("input", changeColor => {
 //     let color = document.getElementById("color").value;
-//     [...document.styleSheets[0].cssRules].find(x => x.selectorText == '.color')
-//         .style['background-color'] = color';
+//     document.styleSheets[0].cssRules.find(x => x.selectorText == '.color').style['background-color'] = color;
 
 
 // });

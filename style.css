@@ -81,13 +81,16 @@ button {
 
 #colorSwitcher{
   background: white;
-  box-shadow: 1em 1em 1em rgba(0, 0, 0, .1);
   display: flex;
   flex-direction: column;
+  display: flex;
+  align-items: center;
+  background-color: #37E2D5;
 }
 
 #colorSwitcher .info{
   padding: 1em;
+  
 }
 
 #colorSwitcher h1, #colorSwitcher h2 {
@@ -106,7 +109,7 @@ input[type="color"] {
   background: none;
   border: 0;
   cursor: pointer;
-  height: 15em;
+  height: 40px;
   padding: 0;
-  width: 15em;
+  width: 40px;
 }
