@@ -46,10 +46,8 @@ function addListeners() {
 //     XXXX.style.backgroundColor = "rgb(" + Math.floor(Math.random() * 256) + "," + Math.floor(Math.random() * 256) + "," + Math.floor(Math.random() * 256) + ")";
 // }))
 
-// document.getElementById("color").addEventListener("input", changeColor => {
-//     let color = document.getElementById("color").value;
-//     document.styleSheets[0].cssRules.find(x => x.selectorText == '.color').style['background-color'] = color;
-
-
-// });
+document.getElementById("color").addEventListener("input", changeColor => {
+    let color = document.getElementById("color").value;
+    document.body.style.setProperty("--box-color", color)
+});
 
