@@ -63,4 +63,7 @@ document.getElementById("color").addEventListener("input", changeColor => {
     currentColor = color;
 });
 
+generateDivs(10);
 
+// resetowac kolor po zmianie rozmiaru kartki
+//skala szarości
