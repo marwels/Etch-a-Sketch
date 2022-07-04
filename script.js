@@ -1,6 +1,12 @@
 let currentColor = "black";
 
 function newCanva() {
+
+    document.querySelectorAll(".item").forEach(item => {
+        item.style.setProperty("background-color", "white");
+    });
+
+
     let size = parseInt(prompt("Please enter how many 'pixels' in a row you want. It has to be number from 1 to 25:", "15"), 10);
 
     if (size < 1 || size > 25) {
@@ -65,5 +71,5 @@ document.getElementById("color").addEventListener("input", changeColor => {
 
 generateDivs(10);
 
-// resetowac kolor po zmianie rozmiaru kartki
+
 //skala szarości
