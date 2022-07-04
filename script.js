@@ -1,4 +1,5 @@
 let currentColor = "black";
+let grayScale = 0;
 
 function newCanva() {
 
@@ -48,6 +49,13 @@ function addListeners() {
             //item.classList.add("color");
             if (currentColor === "rainbow") {
                 item.style.setProperty("background-color", "rgb(" + Math.floor(Math.random() * 256) + "," + Math.floor(Math.random() * 256) + "," + Math.floor(Math.random() * 256) + ")");
+            } else if (currentColor === "gray") {
+                let grayLevel = Number.parseInt(item.dataset["grayLevel"] || "255")
+                if (grayLevel > 0) {
+                    grayLevel -= 10;
+                }
+                item.dataset["grayLevel"] = grayLevel;
+                item.style.setProperty("background-color", `rgb(${grayLevel}, ${grayLevel}, ${grayLevel})`);
             } else {
 
                 item.style.setProperty("background-color", currentColor);
@@ -67,6 +75,10 @@ document.getElementById("color").addEventListener("input", changeColor => {
     let color = document.getElementById("color").value;
     document.body.style.setProperty("--box-color", color);
     currentColor = color;
+});
+
+document.getElementById("gray").addEventListener("click", gray => {
+    currentColor = "gray";
 });
 
 generateDivs(10);
