@@ -1,5 +1,4 @@
 let currentColor = "black";
-let grayScale = 0;
 
 function newCanva() {
 
@@ -84,4 +83,3 @@ document.getElementById("gray").addEventListener("click", gray => {
 generateDivs(10);
 
 
-//skala szarości
